@@ -1,0 +1,263 @@
+#page-wrapper {
+    max-width: 100%;
+    padding: 0 4vw;
+    background: #F6F5F4;
+    font-family: "Outfit", sans-serif;
+}
+
+/* Light Theme */
+html[data-bs-theme="light"] .light-gray-color {
+    color: #888888;
+}
+html[data-bs-theme="light"] .dark-gray-color {
+    color: #333333;
+}
+html[data-bs-theme="light"] .white-color {
+    color: #ffffff;
+}
+html[data-bs-theme="light"] .light-blue-bg {
+    background-color: #D3D8EA;
+}
+html[data-bs-theme="light"] .light-magenta-bg {
+    background-color: #E7DAE4;
+}
+html[data-bs-theme="light"] .light-warm-gray-bg {
+    background-color: #EBE4DC;
+}
+html[data-bs-theme="light"] .dark-gray-bg {
+    background-color: #333333;
+}
+html[data-bs-theme="light"] .white-bg {
+    background-color: #ffffff;
+}
+
+/* Header */
+.header {
+    padding-top: 30px;
+}
+.profile-information {
+    display: flex;
+}
+.profile-information {
+    cursor: default;
+}
+.profile-information img {
+    max-width: 8%;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.profile-information img:hover {
+    max-width: 12%;
+}
+.profile-information .name-location {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.profile-information .name {
+    margin: 0;
+    font-size: 18px;
+}
+.header .download-resume a {
+    text-decoration: none;
+}
+.header .download-resume a:hover {
+    text-decoration: underline;
+}
+.header .download-resume h5 {
+    font-size: 18px;
+}
+.header .download-icon {
+    margin-left: 10px;
+}
+.header .download-icon svg {
+    height: 25px;
+    width: 25px;
+}
+/* Header */
+
+/* About me */
+.about-me {
+    margin-top: 10%;
+}
+.about-me h2 {
+    font-size: 40px;
+    font-weight: 400;
+}
+/* About me */
+
+/* Contact options */
+.contact-options {
+    margin-top: 5%;
+}
+.email-me,
+.connect-on-linkedin {
+    font-size: 28px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.email-me {
+    margin-right: 20px;
+    color: #ffffff;
+    padding: 17px 30px;
+}
+.connect-on-linkedin {
+    border: 2px solid;
+    padding: 15px 30px;
+}
+.email-me svg,
+.connect-on-linkedin svg {
+    height: 32px;
+    width: 32px;
+    margin-top: -7px;
+    margin-left: 5px;
+}
+
+/* 2 ways I can help */
+#page-wrapper .ways-i-can-help {
+    margin-top: 5%;
+}
+#page-wrapper .ways-i-can-help h4 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.ways-i-can-help .action-card {
+    padding: 20px;
+}
+.ways-i-can-help .action-card h5 {
+    color: #888888;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.ways-i-can-help .action-card h3 {
+    color: #333333;
+    font-weight: 400;
+    margin-top: 1%;
+    max-width: 280px;
+}
+.ways-i-can-help .action-card a {
+    color: #333333;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 4%;
+    text-decoration: none;
+    display: block;
+}
+.ways-i-can-help .action-card a svg {
+    width: 30px;
+    height: 30px;
+    transition: 1s;
+}
+.ways-i-can-help .action-card a:hover svg {
+    margin-left: 3px;
+}
+
+/* Selected work */
+.selected-work.top-space-5 {
+    margin-top: 5%;
+}
+.selected-work.top-space-3 {
+    margin-top: 3%;
+}
+.selected-work-bg {
+    padding: 30px;
+}
+.selected-work h4 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.project-logo {
+    padding: 20px 0;
+}
+.about-project {
+    padding: 30px 0 20px;
+    font-weight: 400;
+}
+/* Role details */
+.role-details {
+    padding: 30px 0;
+}
+.role-details .detail ul {
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.role-details .detail ul, 
+.role-details .detail p {
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+    font-size: 18px;
+}
+
+/* Speaking - Writing */
+.speaking-and-writing a {
+    text-decoration: none;
+}
+.speaking-and-writing ul {
+    list-style: none;
+    padding-left: 0;
+}
+.speaking-and-writing ul li {
+    padding: 15px 0;
+}
+.speaking-and-writing h2,
+.speaking-and-writing h4 {
+    font-weight: 400;
+}
+.speaking-and-writing a h2:hover {
+    text-decoration: underline;
+}
+.speaking-and-writing h2 svg {
+    height: 30px;
+    width: 30px;
+}
+.speaking-and-writing h3 {
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+/* Call to action */
+.call-to-actions {
+    padding: 30px;
+    margin: 5% 0;
+}
+.call-to-actions h1 {
+    color: #fff;
+    max-width: 450px;
+    margin: 3% auto 2%;
+}
+.call-to-actions a.email-me {
+    min-width: 300px;
+    display: inline-block;
+}
+.download-resume {
+    padding: 2% 0 1%;
+}
+.download-resume a {
+    font-size: 30px;
+    text-decoration: none;
+}
+.download-resume a:hover {
+    text-decoration: underline;
+}
+.download-resume a svg {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+/* Copyright Information */
+
+.copyright-information {
+    padding-bottom: 3%;
+}
+.copyright-information .social-media ul {
+    list-style: none;
+    padding-left: 0;
+}
+.copyright-information .social-media ul svg {
+    height: 30px;
+    width: 30px;
+}
