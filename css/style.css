@@ -67,9 +67,6 @@ html[data-bs-theme="light"] .white-bg {
 .header .download-resume h5 {
     font-size: 18px;
 }
-.header .download-icon {
-    margin-left: 10px;
-}
 .header .download-icon svg {
     height: 25px;
     width: 25px;
