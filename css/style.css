@@ -92,6 +92,11 @@ html[data-bs-theme="light"] .white-bg {
     font-size: 28px;
     text-decoration: none;
     margin-right: 20px;
+    transition: 0.5s;
+}
+.email-me:hover,
+.connect-on-linkedin:hover {
+    opacity: 0.8;
 }
 .email-me {
     margin-right: 20px;
@@ -189,6 +194,9 @@ html[data-bs-theme="light"] .white-bg {
 }
 
 /* Speaking - Writing */
+.speaking-and-writing {
+    margin-top: 50px;
+}
 .speaking-and-writing a {
     text-decoration: none;
 }
@@ -258,6 +266,12 @@ html[data-bs-theme="light"] .white-bg {
 .copyright-information .social-media ul svg {
     height: 30px;
     width: 30px;
+}
+.copyright-information .social-media ul li a {
+    transition: 0.5s;
+}
+.copyright-information .social-media ul li a:hover {
+    opacity: 0.8;
 }
 
 @media (max-width: 768px) {
