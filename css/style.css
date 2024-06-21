@@ -273,4 +273,22 @@ html[data-bs-theme="light"] .white-bg {
     .ways-i-can-help .action-card {
         margin-bottom: 15px;
     }
+    .project-bottom-spacing {
+        margin-bottom: 15px;
+    }
+    .selected-work h4 {
+        margin-bottom: 10px;
+    }
+    .role-details .detail {
+        margin-bottom: 25px;
+    }
+    .call-to-actions a {
+        display: block;
+        width: 100%;
+    }
+    .copyright-information,
+    .social-media {
+        margin-top: 15px;
+        text-align: center;
+    }
 }
