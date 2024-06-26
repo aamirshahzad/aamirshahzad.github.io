@@ -19,6 +19,7 @@
     transform: translateY(-100%);
     transition: transform 0.3s;
     border-radius: 0 0 5px 5px;
+    z-index: 1;
 }
   
 .skip-to-content-link:focus {
