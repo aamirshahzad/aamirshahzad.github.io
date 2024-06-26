@@ -1,11 +1,14 @@
 #page-wrapper {
     max-width: 100%;
     padding: 0 4vw;
-    background: #F6F5F4;
     font-family: "Outfit", sans-serif;
 }
 
 /* Light Theme */
+
+html[data-bs-theme="light"] #page-wrapper {
+    background: #F6F5F4;
+}
 html[data-bs-theme="light"] .light-gray-color {
     color: #888888;
 }
@@ -24,12 +27,29 @@ html[data-bs-theme="light"] .light-magenta-bg {
 html[data-bs-theme="light"] .light-warm-gray-bg {
     background-color: #EBE4DC;
 }
-html[data-bs-theme="light"] .dark-gray-bg {
+html[data-bs-theme="light"] .dark-gray-bg,
+html[data-bs-theme="dark"] .dark-gray-bg {
     background-color: #333333;
 }
 html[data-bs-theme="light"] .white-bg {
     background-color: #ffffff;
 }
+
+/* Light Theme */
+
+/* Dark Theme */
+
+html[data-bs-theme="dark"] .dark-gray-color {
+    border-color: #333333;
+}
+
+html[data-bs-theme="dark"] .light-blue-bg,
+html[data-bs-theme="dark"] .light-magenta-bg,
+html[data-bs-theme="dark"] .light-warm-gray-bg {
+    background-color: #333333;
+}
+
+/* Dark Theme */
 
 /* Header */
 .header {
@@ -100,7 +120,6 @@ html[data-bs-theme="light"] .white-bg {
 }
 .email-me {
     margin-right: 20px;
-    color: #ffffff;
     padding: 17px 30px;
 }
 .connect-on-linkedin {
@@ -133,13 +152,12 @@ html[data-bs-theme="light"] .white-bg {
     margin-bottom: 10px;
 }
 .ways-i-can-help .action-card h3 {
-    color: #333333;
+   
     font-weight: 400;
     margin-top: 1%;
     max-width: 280px;
 }
 .ways-i-can-help .action-card a {
-    color: #333333;
     font-weight: 400;
     font-size: 20px;
     margin-top: 4%;

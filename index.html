@@ -19,7 +19,46 @@
 
 </head>
 <body>
+
+
+
+
 <div id="page-wrapper">
+    <!-- Light & Dark mode switch -->
+
+    <nav class='navbar navbar-expand border-bottom py-2' data-type='fixednav'>
+        <div class='container-fluid'>
+            <div class='collapse navbar-collapse justify-content-end' id='navbarSupportedContent'>
+                <ul class='navbar-nav ml-auto'>
+                    <li class='nav-item dropdown'>
+                        <button id="toggle-button" aria-expanded='false' class='btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center' data-bs-toggle='dropdown' type='button'>
+                            <i class='bi bi-sun-fill theme-icon-active' data-theme-icon-active='bi-sun-fill'></i>
+                        </button>
+                        <ul class='dropdown-menu dropdown-menu-end'>
+                            <li>
+                                <button class='dropdown-item d-flex align-items-center' data-icon="bi-sun-fill" data-bs-theme-value='light' type='button' onclick="toggleTheme(this)">
+                                    <i class='bi bi-sun-fill me-2 opacity-50' data-theme-icon='bi-sun-fill'></i> Light
+                                </button>
+                            </li>
+                            <li>
+                                <button class='dropdown-item d-flex align-items-center' data-icon="bi-moon-fill" data-bs-theme-value='dark' type='button' onclick="toggleTheme(this)">
+                                    <i class='bi bi-moon-fill me-2 opacity-50' data-theme-icon='bi-moon-fill'></i> Dark
+                                </button>
+                            </li>
+                            <li>
+                                <button class='dropdown-item d-flex align-items-center' data-icon="bi-circle-half" data-bs-theme-value='auto' type='button' onclick="toggleTheme(this)">
+                                    <i class='bi bi-circle-half me-2 opacity-50' data-theme-icon='bi-circle-half'></i> Auto
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page starts here -->
+
     <div class="container-fluid">
         <!--div> Header </div-->
         <div class="row header">
@@ -61,7 +100,7 @@
         <div class="row">
             <div class="col-sm-12 col-md-8">
                 <div class="contact-options">
-                    <a class="email-me dark-gray-bg" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1QhrkTB2YvpMQNVo-awwTKsT9SaCisP9KOilYlEXfXm4I8kUz-oWYThvHB_uCdgySYbfCj2Fs3" target="_blank">
+                    <a class="email-me dark-gray-bg white-color" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1QhrkTB2YvpMQNVo-awwTKsT9SaCisP9KOilYlEXfXm4I8kUz-oWYThvHB_uCdgySYbfCj2Fs3" target="_blank">
                         Email me 
                         <svg alt="Email icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
                             <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
@@ -82,10 +121,10 @@
             <h4 class="light-gray-color">2 ways I can help you</h4>
             <div class="row">
                 <div class="col-sm-12 col-md-6">
-                    <div class="action-card light-warm-gray-bg">
+                    <div class="action-card light-warm-gray-bg dark-gray-color">
                         <h5>Design Consultation</h5>
                         <h3>Let's talk about your project needs.</h3>
-                        <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1QhrkTB2YvpMQNVo-awwTKsT9SaCisP9KOilYlEXfXm4I8kUz-oWYThvHB_uCdgySYbfCj2Fs3">
+                        <a class="dark-gray-color" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1QhrkTB2YvpMQNVo-awwTKsT9SaCisP9KOilYlEXfXm4I8kUz-oWYThvHB_uCdgySYbfCj2Fs3">
                             Book a meeting
                             <svg alt="Right arrow icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-arrow-right-short" viewBox="0 0 16 16">
@@ -99,7 +138,7 @@
                     <div class="action-card light-warm-gray-bg">
                         <h5>Develop Interfaces</h5>
                         <h3>Sharing 10+ years of expertise.</h3>
-                        <a href="#!">
+                        <a class="dark-gray-color" href="#!">
                             Chat with me
                             <svg alt="Right arrow icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-arrow-right-short" viewBox="0 0 16 16">
@@ -498,7 +537,18 @@
 
 </body>
 <!--script src="js/popper.min.js"></script-->
-<!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script-->
+<script>
+    function toggleTheme(thisVal) {
+      let htmlElement = document.getElementsByTagName('html')[0];
+      const currentTheme = htmlElement.getAttribute('data-bs-theme');
+        if(htmlElement.getAttribute('data-bs-theme') != thisVal.getAttribute('data-bs-theme-value')) {
+                //console.log("same theme");
+                const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+                htmlElement.setAttribute('data-bs-theme', newTheme);
+        }
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </html>
 
