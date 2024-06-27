@@ -34,7 +34,8 @@ html[data-bs-theme="light"] #page-wrapper {
     background: #F6F5F4;
 }
 html[data-bs-theme="light"] .light-gray-color {
-    color: #888888;
+    /*color: #888888;*/
+    color: #000000;
 }
 html[data-bs-theme="light"] .dark-gray-color {
     color: #333333;
@@ -170,7 +171,8 @@ html[data-bs-theme="dark"] .light-warm-gray-bg {
     padding: 20px;
 }
 .ways-i-can-help .action-card h5 {
-    color: #888888;
+    /*color: #888888;*/
+    color: #000000;
     font-weight: 300;
     font-size: 18px;
     margin-bottom: 10px;
