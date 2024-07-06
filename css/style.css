@@ -316,6 +316,28 @@ html[data-bs-theme="dark"] .light-warm-gray-bg {
     opacity: 0.8;
 }
 
+/* Accessiblity mode */
+
+div#Accesiblity-mode a {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    background: #333333;
+    padding: 8px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    transition: 0.5s;
+}
+div#Accesiblity-mode a:hover {
+    bottom: 7px;
+}
+div#Accesiblity-mode a svg {
+    color: #ffffff;
+}
+
 @media (max-width: 768px) {
     .contact-options a {
         width: 100%;
