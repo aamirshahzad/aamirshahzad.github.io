@@ -1,3 +1,8 @@
+html,
+body {
+	scroll-behavior: smooth;
+}
+
 #page-wrapper {
     max-width: 100%;
     padding: 0 4vw;
@@ -58,6 +63,9 @@ html[data-bs-theme="dark"] .dark-gray-bg {
 html[data-bs-theme="light"] .white-bg {
     background-color: #ffffff;
 }
+html[data-bs-theme="light"] .back-to-top {
+    color: #333333;
+}
 
 /* Light Theme */
 
@@ -72,12 +80,14 @@ html[data-bs-theme="dark"] .light-magenta-bg,
 html[data-bs-theme="dark"] .light-warm-gray-bg {
     background-color: #333333;
 }
-
+html[data-bs-theme="dark"] .back-to-top {
+    color: rgba(255, 255, 255, 0.65);
+}
 /* Dark Theme */
 
 /* Header */
 .header {
-    padding-top: 30px;
+    padding-top: 50px;
 }
 .profile-information {
     display: flex;
@@ -119,7 +129,7 @@ html[data-bs-theme="dark"] .light-warm-gray-bg {
 
 /* About me */
 .about-me {
-    margin-top: 10%;
+    margin-top: 7%;
 }
 .about-me h2 {
     font-size: 40px;
@@ -336,6 +346,42 @@ div#Accesiblity-mode a:hover {
 }
 div#Accesiblity-mode a svg {
     color: #ffffff;
+}
+
+/* Back to Top */
+.go-to-top {
+    margin-top: 20px;
+    transition: 0.5s;
+}
+.go-to-top:hover {
+    margin-top: 18px;
+}
+.back-to-top {
+    --offset: 800px; 
+    
+    position: sticky;
+    bottom: 0;      
+    margin-right:10px; 
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    
+    /* visual styling */
+    text-decoration: none;
+    font-family: sans-serif;
+    white-space: nowrap;
+    transition: 0.5s;
+}
+.back-to-top span {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+}
+
+
+
+/* Universal style */
+.margin-right-15px {
+    margin-right: -15px;
 }
 
 @media (max-width: 768px) {
