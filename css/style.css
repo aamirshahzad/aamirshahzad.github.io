@@ -383,6 +383,27 @@ div#Accesiblity-mode a svg {
     margin-right: -15px;
 }
 
+@media (max-width: 1650px) and (min-width: 1300px) {
+    .ways-i-can-help .action-card h3 {
+        min-height: 180px;
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 1300px) and (min-width: 768px) {
+    .ways-i-can-help .action-card h3 {
+        min-height: 160px;
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 1000px) {
+    .ways-i-can-help .action-card h3 {
+        font-size: 1.2rem;
+    }
+    .ways-i-can-help .action-card a {
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 768px) {
     .contact-options a {
         width: 100%;
