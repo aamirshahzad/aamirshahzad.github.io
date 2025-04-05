@@ -180,16 +180,15 @@ html[data-bs-theme="dark"] .back-to-top {
     padding: 20px;
 }
 .ways-i-can-help .action-card h5 {
-    color: #888888;
+    color: #666666;
     font-weight: 300;
     font-size: 18px;
     margin-bottom: 10px;
 }
-.ways-i-can-help .action-card h3 {
-   
+.ways-i-can-help .action-card h3 {   
     font-weight: 400;
     margin-top: 1%;
-    max-width: 280px;
+    min-height: 140px;
 }
 .ways-i-can-help .action-card a {
     font-weight: 400;
