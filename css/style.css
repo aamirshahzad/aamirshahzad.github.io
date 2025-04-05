@@ -398,6 +398,7 @@ div#Accesiblity-mode a svg {
 @media (max-width: 1000px) {
     .ways-i-can-help .action-card h3 {
         font-size: 1.2rem;
+        min-height: 70px;
     }
     .ways-i-can-help .action-card a {
         font-size: 14px;
